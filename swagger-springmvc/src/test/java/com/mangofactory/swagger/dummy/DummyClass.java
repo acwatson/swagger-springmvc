@@ -1,7 +1,13 @@
 package com.mangofactory.swagger.dummy;
 
 import com.mangofactory.swagger.annotations.ApiIgnore;
-import com.wordnik.swagger.annotations.*;
+import com.wordnik.swagger.annotations.ApiImplicitParam;
+import com.wordnik.swagger.annotations.ApiImplicitParams;
+import com.wordnik.swagger.annotations.ApiOperation;
+import com.wordnik.swagger.annotations.ApiResponse;
+import com.wordnik.swagger.annotations.ApiResponses;
+import com.wordnik.swagger.annotations.Authorization;
+import com.wordnik.swagger.annotations.AuthorizationScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +20,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
-import static com.mangofactory.swagger.dummy.DummyModels.Ignorable;
+import static com.mangofactory.swagger.dummy.DummyModels.*;
 
 public class DummyClass {
    public void dummyMethod() {
